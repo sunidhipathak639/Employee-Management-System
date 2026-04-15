@@ -1,0 +1,6 @@
+/* Global baseline — theme colors come from MUI CssBaseline */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
