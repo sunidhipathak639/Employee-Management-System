@@ -197,9 +197,12 @@ cd backend && mvn test
 cd frontend && npm test -- --watchAll=false
 ```
 
-## Postman
+## Postman (exported API requests)
 
-Import [postman/EMS.postman_collection.json](./postman/EMS.postman_collection.json). Run **Login**, copy `data.token` from the JSON body into the collection variable **`token`** for secured requests.
+- **Collection JSON:** [postman/EMS.postman_collection.json](./postman/EMS.postman_collection.json) (Postman **Import** → this file).
+- **How to use:** see [postman/README.md](./postman/README.md).
+
+After starting the API, run **Auth → Login**. The Login request **Tests** script saves `data.token` into the collection variable **`token`** so secured requests work automatically. You can still copy `data.token` into **`token`** by hand if you prefer.
 
 ## Screenshots (submission)
 
@@ -220,7 +223,7 @@ This repository was bootstrapped and implemented with assistance from **AI codin
 ```
 backend/          Spring Boot API
 frontend/         React (Vite) SPA
-postman/          Postman collection
+postman/          Postman collection JSON + README
 docs/screenshots/ Add submission PNGs here (create folder if missing)
 schema.sql        Standalone schema + seed
 docker-compose.yml

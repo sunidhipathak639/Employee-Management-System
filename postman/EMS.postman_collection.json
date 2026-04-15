@@ -1,6 +1,8 @@
 {
   "info": {
+    "_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
     "name": "Employee Management System API",
+    "description": "Exported REST requests for the EMS Spring Boot API. Set `baseUrl` (default http://localhost:8080). Run **Auth → Login**; the Tests tab saves `data.token` into the collection variable `token` for all secured requests.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
@@ -25,6 +27,23 @@
         },
         {
           "name": "Login",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "try {",
+                  "  const j = pm.response.json();",
+                  "  if (pm.response.code === 200 && j.data && j.data.token) {",
+                  "    pm.collectionVariables.set('token', j.data.token);",
+                  "    console.log('Collection variable token updated from login response.');",
+                  "  }",
+                  "} catch (e) { console.warn('Could not parse token:', e); }"
+                ]
+              }
+            }
+          ],
           "request": {
             "method": "POST",
             "header": [{ "key": "Content-Type", "value": "application/json" }],
@@ -164,6 +183,14 @@
             "method": "GET",
             "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
             "url": "{{baseUrl}}/api/roles"
+          }
+        },
+        {
+          "name": "Get by id",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": "{{baseUrl}}/api/roles/1"
           }
         },
         {
