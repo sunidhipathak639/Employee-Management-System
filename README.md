@@ -18,7 +18,7 @@ Full-stack **Employee Management System** with a **React** SPA, **Spring Boot 3*
 
 ## Specification coverage and checklist
 
-This project is built against [EMPLOYEE_MANAGEMENT_SYSTEM.md](./EMPLOYEE_MANAGEMENT_SYSTEM.md). Below is what is **implemented in the repository** versus what **you still provide** for course submission (video link, screenshot files).
+This project is built against [EMPLOYEE_MANAGEMENT_SYSTEM.md](./EMPLOYEE_MANAGEMENT_SYSTEM.md). Below is what is **implemented in the repository** versus what **you still provide** for course submission (mainly **screenshot** files if your rubric requires them).
 
 ### Domain & database (§2, §3.3)
 
@@ -79,7 +79,7 @@ This project is built against [EMPLOYEE_MANAGEMENT_SYSTEM.md](./EMPLOYEE_MANAGEM
 | 1 | GitHub repo with `frontend/` + `backend/` + README | Structure + README present | Confirm repo is **public** and meets instructor rules. |
 | 2 | README: setup, **env**, run steps, **screenshots** | Setup, env, run, tests, Postman documented | Add **PNG screenshots** under `docs/screenshots/` and link or embed them here or in your report. |
 | 3 | **`schema.sql`** with CREATE + seed | Completed | — |
-| 4 | **Demo video** (3–5 min, all CRUD flows) | Section below describes content | **Record** walkthrough; **paste URL** (Loom/YouTube) in [Demo video](#demo-video). |
+| 4 | **Demo video** (3–5 min, all CRUD flows) | Two screen recordings linked in [Demo video](#demo-video) | Ensure Drive sharing meets your instructor’s access rules. |
 | 5 | **Postman** collection JSON | [postman/EMS.postman_collection.json](./postman/EMS.postman_collection.json) | — |
 
 ### Bonus features (§8, optional +15)
@@ -210,9 +210,12 @@ Create `docs/screenshots/` if needed, add PNGs (for example: login, employees ta
 
 ## Demo video
 
-Record a **3–5 minute** walkthrough (Loom/YouTube) showing register/login, CRUD for each resource, role assignment, and optional Docker run. **Paste your video URL below when you upload it.**
+Screen recordings (Google Drive) covering register/login, CRUD flows, role assignment, and app usage:
 
-- **Video link:** _(add Loom / YouTube URL here)_
+- **Part 1 —** [Screen Recording 2026-04-15 at 1.18.35 PM](https://drive.google.com/file/d/1yaQ9rfAkGWsPDdNjMQedEIfs6Nganm1J/view?usp=sharing)
+- **Part 2 —** [Screen Recording 2026-04-15 at 1.22.48 PM](https://drive.google.com/file/d/1YqLdgyzBGqRkPNPm8BY2UIT_oM6yLDIm/view?usp=sharing)
+
+If a link asks for sign-in, use **File → Download** or open while signed into the Google account that owns the file, or adjust sharing to “Anyone with the link” in Drive if your instructor needs anonymous access.
 
 ## AI tooling disclosure
 
